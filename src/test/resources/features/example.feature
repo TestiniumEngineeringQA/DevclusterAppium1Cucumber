@@ -379,3 +379,43 @@ Feature: OpenApplication
     Then Wait 2 seconds
     Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
     Then Wait 2 seconds
+
+# ios
+
+  Scenario: IOS Get post with no tag
+    Given Wait 5 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+
+  @IosGetPostWithNoName
+  Scenario:
+    Given Wait 5 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+
+  @IosGetPostWithNameAndTag
+  Scenario: Ios Get Post With Name And Tag
+    Given Wait 5 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+
+  Scenario: @IosGetPostWithTagOnName
+    Given Wait 5 seconds
+    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
+
+# andorid
+
+  Scenario: Android Get post with no tag
+    Given Wait 5 seconds
+    Then Element with xpath "com.gratis.android:id/nav_graph_trademarks" is clicked
+
+  @AndroidGetPostWithNoName
+  Scenario:
+    Given Wait 5 seconds
+    Then Element with xpath "com.gratis.android:id/nav_graph_trademarks" is clicked
+
+  @AndroidGetPostWithNameAndTag
+  Scenario: Android Get Post With Name And Tag
+    Given Wait 5 seconds
+    Then Element with xpath "com.gratis.android:id/nav_graph_trademarks" is clicked
+
+  Scenario: @AndroidGetPostWithTagOnName
+    Given Wait 5 seconds
+    Then Element with xpath "com.gratis.android:id/nav_graph_trademarks" is clicked
