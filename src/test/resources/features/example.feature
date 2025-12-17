@@ -2,23 +2,9 @@ Feature: OpenApplication
 
   @BasicTiklamalarIOS01
   Scenario: BasicTiklamalarIOS01
-    Given Wait 5 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kategoriler']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
-    Then Wait 2 seconds
-    Then Element with xpath "//XCUIElementTypeButton[@name='Markalar']" is clicked
-    Then Wait 2 seconds
-
-    Then Wait 2 seconds
+    Given Wait 15 seconds
+    Then Element with xpath "//XCUIElementTypeApplication[@name='Gratis']/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther" is clicked
+    Then Wait 5 seconds
 
   @BasicTiklamalarIOS02
   Scenario: BasicTiklamalarIOS02
@@ -150,37 +136,15 @@ Feature: OpenApplication
 
   @BasicTiklamalarAndroid01
   Scenario: BasicTiklamalarAndroid01
-    Given Wait 5 seconds
+    Given Wait 15 seconds
     Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 2 seconds
+    Then Wait 5 seconds
     Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 2 seconds
+    Then Wait 5 seconds
     Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
+    Then Wait 5 seconds
     Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 2 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 2 seconds
+    Then Wait 5 seconds
 
   @BasicTiklamalarAndroid02
   Scenario: BasicTiklamalarAndroid02

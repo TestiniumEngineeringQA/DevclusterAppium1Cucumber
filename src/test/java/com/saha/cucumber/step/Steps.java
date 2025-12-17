@@ -40,10 +40,14 @@ public class Steps {
                         .setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,
                                 "com.app.gratis.ui.splash.SplashActivity");
                 capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.ANDROID);
+                // Permissions
+                capabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
                 driver = new AndroidDriver<MobileElement>(new URL(hubURL), capabilities);
             } else {
                 capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.IOS);
                 capabilities.setCapability("bundleId", "com.pharos.Gratis");
+                // Permissions
+                capabilities.setCapability("autoAcceptAlerts",true);
                 driver = new IOSDriver<MobileElement>(new URL(hubURL), capabilities);
             }
         }
