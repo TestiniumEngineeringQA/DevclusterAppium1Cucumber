@@ -383,3 +383,7 @@ Feature: OpenApplication
   Scenario: @AndroidGetPostWithTagOnName
     Given Wait 5 seconds
     Then Element with xpath "com.gratis.android:id/nav_graph_trademarks" is clicked
+
+  @Skipped
+  Scenario: Skipped Test
+     Given Scenario is Skipped
