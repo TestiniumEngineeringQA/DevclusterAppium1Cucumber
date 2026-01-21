@@ -137,13 +137,7 @@ Feature: OpenApplication
   @BasicTiklamalarAndroid01
   Scenario: BasicTiklamalarAndroid01
     Given Wait 15 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
-    Then Wait 5 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_categories" is clicked
-    Then Wait 5 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_campaign" is clicked
-    Then Wait 5 seconds
-    Then Element with id "com.gratis.android:id/nav_graph_trademarks" is clicked
+    Then Element with xpath "/hierarchy/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/androidx.appcompat.widget.LinearLayoutCompat/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.Button[1]" is clicked
     Then Wait 5 seconds
 
   @BasicTiklamalarAndroid02
